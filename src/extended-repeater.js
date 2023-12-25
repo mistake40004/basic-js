@@ -16,7 +16,6 @@ const { NotImplementedError } = require('../extensions/index.js');
  *
  */
 function repeater(str, options) {
-  
   let num = options.repeatTimes === undefined ? 1 : options.repeatTimes,
     sep = options.separator === undefined  ? "+" : String(options.separator),
     add = options.addition === undefined ?  "" : options.addition === null ? "null" : options.addition.toString(),
@@ -28,8 +27,6 @@ function repeater(str, options) {
     add = String(options.addition[Symbol.toPrimitive]('string'));
   let prom =  Array(addRepTimes).fill(add).join(addSep);
   return Array(num).fill(str+prom).join(sep);
-  
-  // remove line with error and write your code here
 }
 module.exports = {
   repeater

@@ -12,7 +12,7 @@ const { NotImplementedError } = require('../extensions/index.js');
  *  [0, '^^', 2],
  *  ['^^', 1, 2]
  * ]) => 3`
- *
+ * 
  */
 function countCats(matrix) {
   let count = 0;
